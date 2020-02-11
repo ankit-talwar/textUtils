@@ -1,0 +1,2 @@
+# textUtils
+string manipulation (python)
