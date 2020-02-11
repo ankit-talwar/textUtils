@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body{
+                text-align:center;
+                background-color:purple;
+                }
+         #txt {
+                color : yellow;
+                }
+    </style>
     <meta charset="UTF-8">
     <title>Analyze Page</title>
 </head>
 <body>
 <h1 style="position:center">You asked for - {{purpose}}</h1>
 <br>
-{{analysis}}
+    <div id="txt">
+        {{analysis}}</div>
 </body>
 </html>
