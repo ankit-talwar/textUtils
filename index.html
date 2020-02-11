@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        body {
+                text-align:center;
+                background-color:grey;
+               }
+        .check {
+                text-align:center;
+                }
+    </style>
     <meta charset="UTF-8">
     <title>working</title>
 </head>
@@ -9,13 +18,13 @@
 <form action="/analyze" method="get">
     <textarea name="text" style="margin: 0px; height: 90px; width: 548px;" wfd-id="1"></textarea>
     <br>
-
+        <div class="check">
         <input type="checkbox" name="removePunc">Remove punctuation <br>
         <input type="checkbox" name="upCase">Upper case<br>
         <input type="checkbox" name="count">count characters<br>
         <input type="checkbox" name="spaceRem">new line remover<br>
         <input type="checkbox" name="space_l">space remover
-
+    </div>
     <br>
         <button type="submit" >Analyze Text</button>
 </form>
