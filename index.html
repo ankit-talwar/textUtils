@@ -1,32 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <style>
-        body {
-                text-align:center;
-                background-color:grey;
-               }
-        .check {
-                text-align:center;
-                }
-    </style>
-    <meta charset="UTF-8">
-    <title>working</title>
-</head>
-<body>
-<h1> Welcome to text analyzer.Enter your text</h1>
-<form action="/analyze" method="get">
-    <textarea name="text" style="margin: 0px; height: 90px; width: 548px;" wfd-id="1"></textarea>
-    <br>
-        <div class="check">
-        <input type="checkbox" name="removePunc">Remove punctuation <br>
-        <input type="checkbox" name="upCase">Upper case<br>
-        <input type="checkbox" name="count">count characters<br>
-        <input type="checkbox" name="spaceRem">new line remover<br>
-        <input type="checkbox" name="space_l">space remover
-    </div>
-    <br>
-        <button type="submit" >Analyze Text</button>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Text Utils</title>
+  </head>
+  <body style="background-color:yellow">
+    <div class="alert alert-success" role="alert">
+  Hey There! Ready to use Text Utils
+</div>
+
+    <form class="container" action="/analyze" method="get">
+
+  <div class="form-group" >
+    <label >Enter the text</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" name="text" rows="7"></textarea>
+  </div>
+        <div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch1" name="removePunc">
+  <label class="custom-control-label" for="customSwitch1">Remove Punctuations</label>
+</div>
+        <div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch2" name="upCase">
+  <label class="custom-control-label" for="customSwitch2">Upper Case</label>
+</div>
+        <div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch3" name="count">
+  <label class="custom-control-label" for="customSwitch3">Toggle this switch element</label>
+</div>
+        <div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch4" name="spaceRem">
+  <label class="custom-control-label" for="customSwitch4">remove spaces</label>
+</div>
+        <div class="custom-control custom-switch">
+  <input type="checkbox" class="custom-control-input" id="customSwitch5" name="space_1">
+  <label class="custom-control-label" for="customSwitch5">remove in line spaces</label>
+</div>
+        <br>
+        <button type="submit" class="btn btn-primary btn-lg" style="margin-top:2;">Analyze my text</button>
 </form>
-</body>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
